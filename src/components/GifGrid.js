@@ -27,20 +27,7 @@ export const GifGrid = ({category}) => {
     //lo comento, y lo uso en un useEffect
     //getGifs();
     
-    const test = (a, b, c)=>{
-       
-        for (let i = 0; i < a.length - (b.length -1); i++) {
-            const element = a.substring(i, i+b.length);
-            if(element === b){
-                a = a.substring(0, i) + c + a.substring ((a.substring(0, i) + c).length, a.length);
-                return a;
-            }
-        }
-        return 'No encontro B en A'
-    };
-    console.log(test('Hili manola', 'ola', 'ela')); 
-
-    
+        
     return (
         <>
             <h3 className="animate__animated animate__fadeIn"> { category } </h3> 

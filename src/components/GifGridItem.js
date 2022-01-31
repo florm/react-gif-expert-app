@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const GifGridItem = ({id, title, url}) => { //si lo leo asi parece que cuando llame a <GifGridItem/> lo hice usando 3 atributos distintos, tipo:
     //<GifGridItem id={id} title={title} url={url}/>
@@ -10,3 +11,9 @@ export const GifGridItem = ({id, title, url}) => { //si lo leo asi parece que cu
         </div>
     )
 }
+
+GifGridItem.propTypes ={
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
